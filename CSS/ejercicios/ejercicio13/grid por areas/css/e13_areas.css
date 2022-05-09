@@ -1,0 +1,38 @@
+[class^="grid-child"]{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.grid_parent{
+    display: grid;
+    gap: 10px;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    grid-template-areas:    "page    page"
+                            "main    masthead"
+                            "main    sidebar"
+                            "footer  footer"
+}
+.grid_parent > .grid-child-1{
+    grid-area: page;
+    background-color: #4bb1ec;
+}
+.grid_parent > .grid-child-2{
+    background-color: #111e36;
+    color: whitesmoke;
+}
+.grid_parent > .grid-child-3{
+    grid-area: main;
+    background-color: blueviolet;
+    color: #cfcdcd;
+}
+.grid_parent > .grid-child-4{
+    background-color: rgb(185, 245, 255);
+}
+.grid_parent > .grid-child-5{
+    grid-area: footer;
+    background-color: #fdf6ab;
+}

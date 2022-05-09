@@ -1,0 +1,13 @@
+Normativa europea sobre quejas de las empresas iso- 3000 o asi. investigar
+Portal de quejas (complains): los empleados se pueden quejar de forma pública
+
+1-EL proyecto lo empezaremos con el modelo de quejas. Buscarlo en otros proyectos
+
+    1 Hacer un Wireframe Un esbozo visual y sencillo  de nuestro
+    modelo de cajas de la para las quejas. El esqueleto, sin texto.
+    Lo podemos hacer en una libreta o con paint o alguno asi
+    plantillas hechas--metronic_v8.0.26
+
+
+2- No usar apis externas 
+3 - para hacer la Api : harcodearla en json

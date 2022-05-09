@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS cheatsheet</title>
+
+    <!-- css EXTERNO EL MENOS PRIORITARIO -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- css INTERNO EL SEGUNDO MENOS PRIORITARIO -->
+    <style>
+        h1 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- css INLINE EL MAS PRIORITARIO -->
+    <h1 style="color:rgb(255, 136, 0);">Título</h1>
+
+    <div></div>
+    <!-- por defecto un contenedor se adapta al alto de los hijos
+    Sin hijos. el alto es cero  -->
+    <div id="mainContainer" class="border"></div>
+    <a href="#example">Link</a>
+
+    <h2>Modelo de caja</h2>
+    <!-- modelo de caja -->
+    <div class="boxmodel">
+        <span>texto</span>
+        <div class="innerbox"></div>
+    </div>
+    <!-- box-sizing -->
+    <h3>Box sizing</h3>
+    <!-- Si escribo .box y enter me hace 
+        <div class="box"></div>-->
+    <div class="box-sizing-parent">
+        <div class="box-sizing-child"></div>
+        <div class="box-sizing-child border-box"></div>
+    </div>
+    <h2>Imágenes de fondo</h2>
+    <!-- imágenes de fondo/ background images -->
+    <div class="background">
+        <h3>Texto sobre la imagen</h3>
+    </div>
+    <!-- posicionamiento -->
+    <h2>Posicionamiento</h2>
+    <h4>Como centrar a lo ancho (eje x)</h4>
+    <div class="centered-x"></div>
+
+    <h4>Tipos de Display: none / inline / block / inline-block</h4>
+    <!-- .box-$*6>p{Lorem ipsum $} -->
+    <div class="box-0">
+        <p>Lorem ipsum</p>
+    </div>
+    <div class="box-1">
+        <p>Lorem ipsum</p>
+    </div>
+    <div class="box-2">
+        <p>Lorem ipsum</p>
+    </div>
+    <div class="box-3">
+        <p>Lorem ipsum</p>
+    </div>
+    <div class="box-4">
+        <p>Lorem ipsum</p>
+    </div>
+    <div class="box-5">
+        <p>Lorem ipsum</p>
+    </div>
+    <div class="box-6">
+        <p>Lorem ipsum</p>
+    </div>
+
+    <a class="inline" href="">Lorem ipsum 7</a>
+    <a class="inline" href="">Lorem ipsum 8</a>
+
+    <h4>Posicionamiento absoluto, centrado en ambos ejes</h4>
+
+    <div class="pos-absolute-parent">
+        <div class="pos-absolute-child"></div>
+    </div>
+
+    <h4>Posicionamiento relativo</h4>
+    <div class="pos-relative"></div>
+
+    <h4>Posicionamiento sticky</h4>
+    <div class="pos-sticky">
+        <a href="">Inicio</a>
+        <a href="">Contacto</a>
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae vero repudiandae repellat soluta sunt fuga
+        sed sequi architecto iste cumque incidunt, nam earum eos et dolore assumenda cum aliquid ducimus tempore optio
+        quidem. Blanditiis dicta nulla vitae excepturi? Placeat, dolorum. Et voluptas natus repellendus accusamus odio
+        error sunt iusto optio quaerat impedit fugiat eius excepturi quibusdam hic quidem aut, a doloremque ratione quis
+        atque expedita. Alias ratione laudantium tempora voluptate, nemo tempore ipsa dolor aliquid hic, incidunt
+        repudiandae quidem quisquam earum nobis in officiis fugit debitis quae illum dicta illo consectetur! Totam,
+        quos, inventore impedit quasi iusto error ab asperiores fugit sapiente eligendi blanditiis cumque! Repudiandae
+        labore reprehenderit natus distinctio voluptatem veritatis voluptate tempore laborum, ullam ratione odio
+        doloribus hic. Ut optio aliquid dolorem, deserunt a iste voluptate sapiente doloremque earum nihil ipsum
+        excepturi soluta quisquam perspiciatis quam aperiam adipisci vel mollitia? Provident placeat quidem sequi,
+        magnam voluptates quas nisi nihil quos, voluptate ipsa eligendi. Nemo sint et quas culpa enim at porro, a
+        quaerat sequi vitae, quibusdam beatae exercitationem sunt explicabo molestias facilis consequuntur nihil!
+        Asperiores soluta nobis dolor dolores accusamus dignissimos explicabo et ducimus deleniti sequi natus assumenda
+        labore deserunt ullam architecto odit dolorem, pariatur totam voluptatum quibusdam blanditiis aperiam!
+        Perferendis voluptatem, nostrum quos ipsam, quidem non fugit quaerat atque laboriosam rerum accusantium aut,
+        aperiam quam quisquam doloremque! Nam ab minima voluptates. Similique at, earum tempora dolorem id voluptatibus
+        necessitatibus recusandae officia adipisci est architecto blanditiis nulla amet, fuga dicta? Dolorum similique
+        recusandae quis nemo, accusamus officia ratione maiores deserunt fuga est cum commodi pariatur nobis omnis odio
+        quia temporibus vel delectus autem exercitationem natus accusantium! Maiores, laudantium quae. Voluptatum
+        quisquam error ut, nostrum quia obcaecati voluptate delectus rem alias inventore.
+    </p>
+
+    <h4>Posicionamiento fixed</h4>
+    <div class="pos-fixed">
+        <a href="">Botón fijo</a>
+    </div>
+
+
+    <h4>overflow - gestión del desbordamiento</h4>
+
+    <h5>overflow - hidden</h5>
+    <div class="overflow-parent">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam odit, maiores nam ad unde sit, minima iusto
+            quae quod laborum illo fuga, similique non libero recusandae facere voluptate id quas illum animi!
+        </p>
+    </div>
+    <h5>overflow - visible</h5>
+    <div class="overflow-parent-2">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam odit, maiores nam ad unde sit, minima iusto
+            quae quod laborum illo fuga, similique non libero recusandae facere voluptate id quas illum animi!
+        </p>
+    </div>
+    <h5>overflow - scroll</h5>
+    <div class="overflow-parent-3">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam odit, maiores nam ad unde sit, minima iusto
+            quae quod laborum illo fuga, similique non libero recusandae facere voluptate id quas illum animi!
+        </p>
+    </div>
+
+    <h4>Media queries</h4>
+    <div class="visible-for-desktops">
+        <p>Lorem ipsum dolor sit.</p>
+    </div>
+
+    <!-- ejercicio de ejemplo -->
+
+
+    <div class="menu-example">
+        <a href="">Enlace 1</a>
+        <a href="">Enlace 2</a>
+        <a href="">Enlace 3</a>
+        <a href="">Enlace 4</a>
+    </div>
+
+    <!-- flexbox -->
+    <h4>flexbox</h4>
+
+    <div class="flex-parent">
+        <!-- .flex-child $*3>h5(box $) -->
+        <div class="flex-child-1">
+            <h5>box 1</h5>
+        </div>
+        <div class="flex-child-2">
+            <h5>box 2</h5>
+        </div>
+        <div class="flex-child-3">
+            <h5>box 3</h5>
+        </div>
+
+    </div>
+
+    <!--  CSS grid -->
+    <h4>CSS Grid</h4>
+    <div class="grid-parent">
+        <div class="grid_child-1">
+            <h5>Box 1</h5>
+        </div>
+        <div class="grid_child-2">
+            <h5>Box 2</h5>
+        </div>
+        <div class="grid_child-3">
+            <h5>Box 3</h5>
+        </div>
+        <div class="grid_child-4">
+            <h5>Box 4</h5>
+        </div>
+        <div class="grid_child-5">
+            <h5>Box 5</h5>
+        </div>
+        <div class="grid_child-6">
+            <h5>Box 6</h5>
+        </div>
+    </div>
+    <h5>CSS Grid por lineas</h5>
+    <div class="grid-parent-2">
+        <div class="grid_child-1">
+            <h5>Box 1</h5>
+        </div>
+        <div class="grid_child-2">
+            <h5>Box 2</h5>
+        </div>
+        <div class="grid_child-3">
+            <h5>Box 3</h5>
+        </div>
+        <div class="grid_child-4">
+            <h5>Box 4</h5>
+        </div>
+        <div class="grid_child-5">
+            <h5>Box 5</h5>
+        </div>
+        <div class="grid_child-6">
+            <h5>Box 6</h5>
+        </div>
+    </div>
+    <h5>CSS Grid por areas</h5>
+    <div class="grid-parent-3">
+        <div class="grid_child-1">
+            <h5>Box 1</h5>
+        </div>
+        <div class="grid_child-2">
+            <h5>Box 2</h5>
+        </div>
+        <div class="grid_child-3">
+            <h5>Box 3</h5>
+        </div>
+        <div class="grid_child-4">
+            <h5>Box 4</h5>
+        </div>
+        <div class="grid_child-5">
+            <h5>Box 5</h5>
+        </div>
+    </div>
+    <!-- gradientes y sombras -->
+    <h4>Degradados o gradientes de color</h4>
+    <div class="gradient-1"></div>
+    <div class="gradient-2"></div>
+    <div class="gradient-3"></div>
+    <div class="gradient-4"></div>
+
+    <!-- transformaciones -->
+    <h4>Transformaciones</h4>
+    <div class="transformation"></div>
+
+    <!-- Transiciones -->
+    <h4>Transiciones</h4>
+    <div class="transition">click</div>
+
+    <!-- Animaciones -->
+    <h4>Animaciones</h4>
+    <div class="text-animation">
+        <h3>Texto animado</h3>
+    </div>
+
+    <div style="height: 500px;"></div>
+
+</body>
+
+</html>

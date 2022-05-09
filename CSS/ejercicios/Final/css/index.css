@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/inter/v3/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',system-ui,'Roboto',Helvetica,Arial;
+}
+.wrapper{
+   min-height: 100vh;
+}/* barra de navegación */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: burlywood;
+}
+.Logo{
+    display: none;
+}
+.navbar .fas{
+    color: #7e3af2;
+}
+/* article y aside */
+.article{
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.columna-1{
+    width: 200px;
+    padding: 1em 0.5em;
+    display: none;
+        
+}
+.Aside-list{
+    padding: 0px;
+    
+}
+.li{
+    color: #24262d;
+    padding: 1em 0;
+    list-style-position: inside;
+}
+li>a{
+    text-decoration: none;
+    color: #24262d;
+}
+.li:hover{
+    background-color: darkgray;
+
+}
+.dashboard{
+    list-style-image: url(https://cdn-icons-png.flaticon.com/16/25/25694.png);
+    
+}
+.clients{
+    list-style-image: url(https://cdn-icons-png.flaticon.com/16/32/32384.png);
+    
+}
+.products{
+    list-style-image: url(https://cdn-icons-png.flaticon.com/16/3134/3134338.png);
+    
+}
+.sales{
+    list-style-image: url(https://cdn-icons-png.flaticon.com/16/2258/2258843.png);
+    
+}
+.shipping{
+    list-style-image: url(https://cdn-icons-png.flaticon.com/16/71/71222.png);
+    
+}
+.statistics{
+    list-style-image: url(https://cdn-icons-png.flaticon.com/16/603/603097.png);
+    
+}
+.add-product{
+    width: 100%;
+    background-color: #6c2bd9;
+    color: white;
+    border-radius: 10px;
+    margin: 1em 0;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.columna-2{
+    margin: 0;
+    width: 100%;
+    padding: 0.5em;
+    background-color: #f4f5f7;
+}
+.search-bar{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.5em 0;
+}
+.search-box{
+    position:relative;
+    padding: 2px;
+}
+.fa-search{
+    position: absolute;
+    padding-top: 2px;
+    padding-left: 5px;
+}
+.search-input{
+    padding-left: 30px;
+}
+.image-bar{
+    height: 20px;
+    width: 20px;
+}
+/* Sección principal */
+.title-dashboard{
+    padding: 0.5em 0;
+}
+.missed-view-bar{
+    background-color:#6c2bd9 ;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1em;
+    border-radius: 10px;
+    margin: 1em 0;
+}
+/* .resaltados .fas{
+    background-color: tomato;
+    height: 2em;
+    width: 2em;
+    
+} */
+[class^=child]{
+    background-color: white;
+    height: 4em;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px; 
+    display: flex;
+}
+[class^="icon"]{
+    
+    /* background-color: #feecdc; */
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-1{
+    background-color: #feecdc;
+}
+.fa-users {
+    color: #ff5a1f;
+   
+}
+.icon-2{
+    background-color: #def7ec;
+}
+.fa-money-bill{
+    color: #0e9f6e;
+}   
+.icon-3{
+    background-color: #e1effe;
+}
+.fa-shopping-cart {
+    color: #3f83f8;    
+}
+.icon-4{
+    background-color:  #d5f5f6;
+}
+.fa-comment-dots {
+    color:  #0694a2;
+}
+
+.table{
+  
+  border-collapse: collapse;
+  width: 100%;
+
+}
+.cabecera-tabla>tr>th{
+    color: #24262d;
+    background-color: #f4f5f7;
+    text-align:left;
+    padding: 1em;
+}
+.cuerpo-tabla>tr>td{
+    padding: 1em;
+    background-color: white;
+}
+.pagination-bar>h5{
+    color: #24262d ;
+}
+.page-number{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.5em;
+}
+.pages{
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+.pages:hover{
+    background-color: #6c2bd9;
+    color: white;
+}
+@media only screen and (min-width: 550px) {
+    .Logo{
+        display: block;
+    }
+    .search-section{
+        display: none;
+    }
+    .columna-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;   
+    }
+    .resaltados{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (min-width: 1080px) {
+    .resaltados{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

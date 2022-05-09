@@ -1,0 +1,13 @@
+for(var i = 0; i<1000000;i++){db.surveys.insert({"Name":"user"+i,"Age":Math.floor(Math.random()*120)})}
+
+//búqueda sin indice 
+db.surveys.find({"Name":"user101"}).explain("allPlansExecution")
+
+//búsqueda con índice para agilizar la búsqueda
+db.surveys.createIndex({"Name":1})
+
+db.surveys.find({"Name":"user101"}).explain("allPlansExecution")
+
+//Al comprobar los resultados la 1º, tarda 714 milisecs. y la 2º apenas 1 milisec.
+//xq gracias al índice no comprueba el millon de registros sino que va directo
+//al que le indico.

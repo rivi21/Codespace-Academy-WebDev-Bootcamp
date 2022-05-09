@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E4 DOM</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="my-4">Books</h1>
+
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Sales</th>
+                    <th scope="col" id="priceHeader">Price</th>
+                    <th scope="col">Remove</th>
+                </tr>
+            <tbody>
+            </tbody>
+            <tfoot id="footer">
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col">Total Price:</th>
+                    <th scope="col" id="pricesAmount"></th>
+                    <th scope="col"></th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="container w-50">
+        <div class="row mb-4">
+            <input type="text" class="form-control col md-4" id="searchBooks" placeholder="Search Book">
+        </div>
+        <div class="row">
+            <button class="btn btn-warning col md-4" id="sortButton">Sort by Price</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="my-4">Add a new Book</h1>
+        <div class="row">
+            <div class="form-group col">
+                <label for="inputTitle">Title</label>
+                <input type="text" class="form-control" id="inputTitle">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col">
+                <label for="inputAuthor">Author</label>
+                <input type="text" class="form-control" id="inputAuthor">
+            </div>
+            <div class="form-group col">
+                <label for="inputSales">Sales</label>
+                <input type="number" class="form-control" id="inputSales">
+            </div>
+            <div class="form-group col">
+                <label for="inputPrice">Price</label>
+                <input type="number" class="form-control" id="inputPrice">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary" id="addBookButton">Save</button>
+
+        <form class="mb-5"></form>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

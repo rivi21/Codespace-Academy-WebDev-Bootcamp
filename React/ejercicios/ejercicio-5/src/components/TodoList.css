@@ -1,0 +1,8 @@
+.completed{
+    background-color: rgb(60, 245, 91);    
+  }
+
+.completed span{
+    text-decoration : line-through;
+    font-style: italic;
+}

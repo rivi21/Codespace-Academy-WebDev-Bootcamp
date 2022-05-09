@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E1-DOM</title>
+    <link rel="stylesheet" href="css/e1dom.css">
+</head>
+
+<body>
+
+    <h3>Apartado 1</h3>
+    <div id="mainContainer"></div>
+
+    <h3>Apartado 2</h3>
+    <button>Cambiar fondo</button>
+
+    <h3>Apartado 3</h3>
+    <ul>
+        <li>
+            https://cdn.pixabay.com/photo/2021/10/31/10/23/nature-6756974_960_720.png
+        </li>
+        <li>
+            https://images.pexels.com/photos/2835436/pexels-photo-2835436.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+        </li>
+        <li>
+            https://images.pexels.com/photos/370717/pexels-photo-370717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+        </li>
+    </ul>
+    <img src="" alt="Aqui va una imagen">
+
+    <h3>Apartado 4</h3>
+    <p id="paragraphA4"></p>
+    <input type="text">
+    <button>Relllenar párrafo</button>
+
+    <h5>4.2</h5>
+    <p id="paragraphA42"></p>
+    <input type="text">
+
+    <h3>Apartado 5</h3>
+    <textarea cols="30" rows="10"></textarea>
+
+    <h3>Apartado 6</h3>
+    <label for="evenNumberInput">Escribir un número par</label>
+    <input id="evenNumberInput" type="text">
+    <button>Validar</button>
+
+    <h3>Apartado 7</h3>
+    <ul id="listToFill"></ul>
+
+    <h3>Apartado 8</h3>
+    <a href="https://codespaceacademy.com/">Code</a>
+    <!-- El atributo target="_blank" hace que el enlace se abra en otra pestaña
+        Es un atributo de HTML no es js, pero podemos jugar con él desde js como 
+    con el resto de atributos. Esto es mjor que ponerlo en el HTML  -->
+    <button id="newTab">Activar nueva pestaña</button>
+
+    <h3>Apartado 9</h3>
+    <p id="colorsParagraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    <label for="colorsSelect">Color del párrafo:</label>
+    <select name="colores" id="colorsSelect">
+        <option value="">--Elige una opción--</option>
+        <option value="black">negro</option>
+        <option value="red">rojo</option>
+        <option value="yellow">amarillo</option>
+        <option value="green">verde</option>
+        <option value="blue">azul</option>
+    </select>
+
+    <h3>Apartado 10</h3><!-- revisar -->
+
+    <p>Aleatorio: <span id="randomNumber"></span></p>
+    <p>Números en total: <span id="totalNumbers"></span></p>
+    <p>Impares: <span id="odds"></span></p>
+    <p>Pares: <span id="evens"></span></p>
+    <button>Generar Aleatorio</button>
+
+    <h3>Apartado 11</h3>
+
+    <ul id="list-apt11"></ul>
+    <input id="input-apt11" type="text" placeholder="Escriba un número">
+    <button id="btn-apt11">check number</button>
+
+    <h3>Apartado 12</h3>
+    <div>
+        <button class="button" id="toogler">Toogle Style</button>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

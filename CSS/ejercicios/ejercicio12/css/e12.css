@@ -1,0 +1,47 @@
+body{
+    background-color: blueviolet;
+}
+.parent{
+    
+    height: 80vh;
+    width: 20%;
+    margin:auto;
+    padding: 1em;
+    background-color: #ffffff;
+    border-radius: 3%;
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #9b9898;
+    text-align: center;
+    margin: 1em 8%; 
+}
+.uno{
+    background-color:  #e6e0e0;
+    height:2em;
+    margin: 1em 8%; 
+}
+.child-2{
+    display:flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+        
+}
+.circle{
+    background-color: #dbdbdb;
+    height: 4em;
+    width: 4em;
+    border-radius: 50%;   
+}
+.bar{
+    background-color: #dbdbdb;
+    height: 2em;
+    width: 33%;
+    margin: 10%;   
+}
+

@@ -1,0 +1,19 @@
+.button {
+    border-radius: 5ps;
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blanchedalmond;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+.bodyBackColor {
+    background-color: red;
+}
+.borderInput{
+    border: red;
+    border-style: solid;
+    border-width: 2px;
+
+}

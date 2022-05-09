@@ -1,0 +1,21 @@
+ul{ 
+    border: 2px solid blueviolet;
+    padding: 0px;
+    width: 40%
+}
+li{
+    background-color: cyan;
+    padding: 20px;
+    color: #050303;
+    
+    
+    border: 2px solid blueviolet;
+    list-style-image: url(https://cdn-icons-png.flaticon.com/16/659/659915.png);
+    list-style-position: inside;
+    cursor: pointer;
+    
+}
+li:hover{
+    background-color: #77778d ;
+    list-style-image: url(https://cdn-icons-png.flaticon.com/16/660/660276.png);
+}

@@ -1,0 +1,77 @@
+/* latin */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/inter/v3/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+*{ 
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',system-ui,'Roboto',Helvetica,Arial;
+}
+.parent{
+    height: 100vh;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+.parent-imagen{
+    height: 30vh;
+    background-image:url(https://images.pexels.com/photos/163146/tablet-notes-coffee-work-desk-163146.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) ;
+    background-position: 34% 60%;
+}
+.parent-datos{
+    padding:0 2em;
+}
+ .form-sections, .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em 0;
+}
+.parts-2{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.inline {
+    margin-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.Login {
+    background-color: #7e3af2;
+    border-radius: 10px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.inline .button{
+    
+    border-radius: 10px;  
+}
+a {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 500px) {
+    .parent{
+        flex-direction: row;
+        
+    }
+    .parent-imagen{
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+        background-position: center bottom;
+    
+    }
+    .parent-datos{
+        display:inline-block;
+        width: 50%;
+    }
+}
+
+
+

@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+.box {
+    padding: 10px 10%; 
+}
+.miweb{   
+    background-color: #ff3c00;
+
+}
+.navbar {   
+    background-color: #1b1919;    
+}
+.navbar ul{
+    padding: 0px;
+    list-style: none;    
+}
+.navbar a{  
+    text-decoration: none;
+}
+.imagen{
+    background-image: url(https://images.pexels.com/photos/3123824/pexels-photo-3123824.jpeg?cs=srgb&dl=pexels-aleksandar-pasaric-3123824.jpg&fm=jpg);
+    background-size: cover;
+}
+.imagen h1{
+    margin: 50px 0px;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    text-align:  center;
+}
+.paragraph-one h3{
+    color: rgb(10, 9, 9); 
+    margin: 1em 0;
+}
+.paragraph-one p{
+    line-height: 1.5em;
+    color: rgb(10, 9, 9);     
+}
+.paragraph-two{
+     background-color: #302e2e;
+     line-height: 1.5em;
+     margin: 1em 0;
+}
+.foot{     
+    background-color: #292727;
+    padding: 2em;
+    text-align: center;
+}
+@media only screen and (min-width: 768px) {
+    .navbar li{
+        margin-right: 2%; 
+        display: inline;
+    }
+    .paragraph-one {
+        width: 50%;
+        display: inline-block;
+        padding-right: 2em;
+    }
+      .paragraph-two{
+          display: inline-block;
+          width:40%;
+
+          padding: 0;
+          padding-right: 9%;
+      }  
+    
+}
+

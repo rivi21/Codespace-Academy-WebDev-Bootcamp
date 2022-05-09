@@ -1,0 +1,512 @@
+/* quitar estilos por defecto */
+body{
+    margin: 0px;
+}
+
+/* tipos de selectores */
+
+/* Selector de etiqueta */
+h1 {
+    color:brown;
+    background-color: cornflowerblue;
+}/* selecciona todos los h1 de la página */
+
+/* selector por iD */
+#mainContainer{
+    height: 200px;
+    background-color:darksalmon;
+}
+
+/* selector por clase */
+.border{
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+/* short hand : lo mismo en una linea. 
+El orden si son propiedades diferentes, 
+no importa*/
+    border: 2px black solid;
+
+}
+
+/* selector por atributo */
+[href="#example"] {
+    text-decoration: none;
+}
+
+[placeholder="introduce tu email"] {
+
+}
+
+[clas="box"] {
+
+}
+
+/* selector por jerarquía */
+div span {
+
+}/*  selecciona cualquier span dentro de un 
+div a cualquier profundidad */
+ul>li {
+/* selecciona los li hijos directos del ul */
+}
+
+.container>.link{
+    /* selecciona todos los elementos clase link
+    dentro de los elementos clase container */
+}
+
+/* modelo de caja */
+.boxmodel{
+    height: 200px;
+    background-color: cornflowerblue;
+    border: 2px dashed darkblue;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.innerbox{
+    height: 100px;
+    background-color: darkred;
+    
+        /* margin: 20px; pone 20px a todos*/
+        /* margin: 20px 20px; pone 20px por pares arriba abajo, izq-drcha */
+        margin: 10px 20px 30px 40px; /* pone uno a cada uno */
+
+        /* con padding funciona igual que con margin */
+}
+/* Box-sizing */
+.box-sizing-parent{
+    width: 200px; /* sin width me coge el 100% del ancho */
+    height: 200px;
+    border: 10px solid #e6ab16;
+}
+.box-sizing-child{
+    height: 50px;/* height: 50% -en porcentaje lo haria con respecto al body que marca el 100% */
+    background-color:green;
+    border: 10px solid darkslategray;
+
+    width: 100%;
+    /* porcentaje respecto al padre- */
+}
+.border-box{
+    margin-top:10px;
+    box-sizing: border-box;
+}
+/* imágenes de fondo/ background images */
+.background{
+    height: 100vh;
+    background-image: url(https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    background-position: center center;
+    background-size: cover;/* se adapta sola a cualquier tamaño solo hay que indicar donde se ancla*/
+/* background repeat: no-repeat (para que no repita la foto, pero mejor cambiar la foto y poner cover */
+   
+    background-attachment: fixed;/* deja la imagen fija y mueve el scroll */
+
+}
+.centerd-x{
+    height: 50px;
+    width: 25%;
+    background-color: seagreen;
+
+    margin: auto;
+}    
+/* >Tipos de Display: none / inline / block / inline-block */
+.box-1, .box-2, .box-3, .box-4, .box-5, .box-6{
+    background-color: darkslategray;
+}
+
+/* en lugar de = selecciona aquello que empiece por lo que introduzca */
+[class^="box-"] {
+     background-color: darkslategray;
+        
+}
+.box-0 {
+    display: none;
+}
+.box-3,
+.box-3 p,
+.box-4,
+.box-4 p {
+    display:inline;
+}
+.box-5,
+.box-5 p,
+.box-6,
+.box-6 p{
+    display: inline-block;
+}
+.inline{
+    display: block;
+}
+/* posicionamiento absoluto centrado en ambos ejes */
+
+.pos-absolute-parent {
+    height: 300px;
+    border: 15px solid tomato;
+
+    position: relative;
+}
+
+.pos-absolute-child {
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+/* para situar en el espacio usaremos flexbox, no esto  */
+    margin-top: -25px;
+    margin-left: -25px;
+}
+/* posicionamiento relativo */
+.pos-relative {
+    width: 50px;
+    height: 50px;
+
+    background-color: turquoise;
+    position: relative;
+    top: -30px;
+    left: 150px;
+}
+
+/* posicionamiento sticky */
+.pos-sticky {
+    background-color: aquamarine;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0px;/* así se queda pegado arriba */
+}
+
+/* Posicionamiento fixed */
+.pos-fixed {
+    background-color: dimgrey;
+    padding: 20px 30px;
+
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+/* controla la superposición de los elementos */
+    z-index: 1;
+}
+.pos-fixed a {
+    text-decoration: none;
+    color: floralwhite;
+}
+/* posicionamiento float
+    no se usa ya desde hace años. Solo conocer que existe */
+
+    /* overflow - gestion del dsbordamiento */
+    [class^="overflow-parent"] {
+        width: 200px;
+        height: 100px;
+        border: 3px dashed black;
+
+        margin-bottom: 100px;
+    }
+.overflow-parent {
+    overflow: hidden;
+}
+.overflow-parent-2{
+    overflow: visible;
+}
+.overflow-parent-3{
+    overflow: scroll;
+}
+/* Media queries */
+.visible-for-desktops{
+    background-color: chocolate;
+    padding: 30px;
+}
+@media only screen and (max-width: 768px) {
+    .visible-for-desktops {
+        display: none;
+    }
+}
+/* ejemplo */
+.menu-example {
+    background-color: #005564;
+    margin-top: 20px;
+    padding: 15px 20px;
+}
+
+.menu-example a {
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    
+    display: inline;
+}
+ 
+@media only screen and (max-width: 480px) {
+    .menu-example a {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .menu-example a:last-child {
+        margin-bottom: 0;
+    }/* este funciona porque es mas especifico, 
+    pero tb porque a igual especificidad al estar después, lo haría */
+}
+
+@media only screen and (min-width: 680px) {
+    /* .lastChild {
+        display: none;
+    } */
+
+    .menu-example a:last-child {
+        display: none;
+    }
+}
+
+/* flexbox */
+.flex-parent {
+    border: 3px dashed black;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    /* main axis eje principal */
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;/* repasar todas estas propedades */
+
+    /* cross axis eje cruzado */
+    align-items: flex-end;
+    align-items: flex-start;
+    align-items: center;
+    align-items: stretch;
+
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.flex-parent > div:nth-child(odd){
+    background-color: #c7c6c1;
+    color: black;
+}
+.flex-parent > div:nth-child(even){
+    background-color: black;
+    color:#c7c6c1
+}
+/* class^ = shift ^ + space */
+[class^="flex-child"]{
+    width: 100px;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+.flex-child-1{
+    /* flex-grow: 1; */
+    /* order: 2; */
+    flex-shrink: 2;
+}
+.flex-child-2{
+    flex-grow: 2;
+    /* order: 1; */
+    /* align-self: center;  */
+}
+/* por defecto el flex-grow es cero y si pongo 1 ya crece y el schrink es 1 y al poner cero no decrece */
+
+/* CSS grid */
+[class^="grid_child"]{
+    background-color: #a5572a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-parent{
+    display: grid;
+
+    gap: 10px;
+
+    /* grid-template-columns: repeat(autofit, minmax(160px 1fr)); */ /* esta es la secuencia de pasos intermedios de lo que hace el CSS */
+    /* grid-template-columns: 160px 160px 160px 160px 160px 160px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: minmax(160px 1fr) minmax(160px 1fr) minmax(160px 1fr) minmax(160px 1fr) minmax(160px 1fr) minmax(160px 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(160px 1fr));/* esto sirve para sustituir a las medias queries */
+
+
+    /* grid-template-columns: 1fr 2fr 1fr;  */
+    grid-template-rows: 1fr;
+}/* el tamaño mínimo 1fr lo marca el tamaño del conrtenido; texto , ...
+Existe la opción de combinar los fr con unidades más rígidas
+tipo 1fr 20vh 2fr o así */
+/* En cuanto añadamos mas cajas el patron que hemos marcado,
+se repetirá con la propiedad repeat si no habrá que especificarlo manualmente*/
+
+/* @media only screen and (max-width: 900px){
+    .grid-parent{
+        grid-template-columns:2fr 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+} */
+/* @media only screen and (max-width: 768px){
+    .grid-parent{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr;  estas y la siguiente significan lo mismo 
+        grid-template-rows: repeat (3, 1fr 2fr);   
+}*/
+
+/* CSS Grid con lineas */
+
+.grid-parent-2{
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    gap: 10px;
+}
+.grid-parent-2 .grid_child-1{
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;/* se puede simplificar así grid-row: 1; si noatravies más lineas */
+
+}
+.grid-parent-2 .grid_child-2{
+    grid-column: 3 ;
+    grid-row: 1 / 3;
+}
+.grid-parent-2 .grid_child-3{
+    grid-column: 1 / 3;
+    grid-row: 2 / 5;
+
+    opacity: 0.5;
+    z-index: -1;
+}
+/* .grid-parent-2 .grid_child-4{
+    grid-column: 3;
+    grid-row: 3;
+} */ /* no hace falta poner este porque cae ahí de forma natural  */
+.grid-parent-2 .grid_child-5{
+    grid-column: 2 / 4;
+    grid-row: 4;
+}
+.grid-parent-2 .grid_child-6{
+    grid-column: 1;
+    grid-row: 2;
+}
+/* CSS grid por areas */
+.grid-parent-3{
+    display: grid;
+    gap: 10px;
+
+    grid-template-columns: 150px 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+
+    grid-template-areas: "nav    nav    nav"
+                         "Cont1  Cont2  Cont3"
+                         "Footer Footer Footer" 
+}
+.grid-parent-3 > .grid_child-1{
+    grid-area: nav;
+}
+.grid-parent-3 > .grid_child-2{
+    grid-area: Cont1;
+}
+.grid-parent-3 > .grid_child-3{
+    grid-area: Cont2;
+}
+.grid-parent-3 > .grid_child-4{
+    grid-area: Cont3;
+}
+.grid-parent-3 > .grid_child-5{
+    grid-area: Footer;
+}
+
+/* gradientes y sombras */
+/* Degradados o gradientes de color */
+
+[class^=gradient] {
+    height: 100px;
+    margin-bottom: 10px;
+
+}
+.gradient-1{
+    background: linear-gradient(to right, blueviolet, white);
+}
+.gradient-2{
+    background: linear-gradient(to bottom, blue, white 20%, orange);
+}/* si no pongo % se reparte equitativamente */
+.gradient-3{
+    background: linear-gradient(to bottom, rgba(255, 255, 255,0), rgba(255,255,255,1),
+    url(https://images.pexels.com/photos/5235853/pexels-photo-5235853.jpeg?cs=srgb&dl=pexels-olya-kobruseva-5235853.jpg&fm=jpg));
+}/* cambiar la foto que no funciona */
+.gradient-4{
+    width: 100px;
+    background: radial-gradient(white 16%, red 25%, orange 10%);
+/* sombras */
+    box-shadow: 5px 20px 15px rgba(0,0,0,0.4);
+}
+/* Transformaciones */
+
+.transformation{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(165, 127, 255);
+
+    transform: translate(300px, -50px) rotate(45deg) scale(1.4) skew(25deg);
+}
+.transformation:hover{
+    transform: translate(300px, -50px) rotate(45deg) scale(1.4) skew(10deg);
+}
+
+/* transiciones */
+
+.transition{
+   height: 100px;
+   width: 100px;
+   background-color: brown;
+   color: cornsilk;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   cursor: pointer;
+
+  /*  transition-property: transform;
+   transition-duration: 0.5s; */
+   transition: all 0.5s linear;
+}
+.transition:hover{
+    background-color: cornsilk;
+    color: darkcyan;
+    transform: scale(1,2) rotate(3deg);
+}
+
+/* Animaciones */
+.text-animation {
+    animation-name: slidein;
+    animation-duration: 3s;
+
+    animation-iteration-count: infinite;/* o un número concreto */
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+    /* animation-direction: alternate */
+    /* animation-fill-mode: forwards;controla lo que pasa al terminar la animación */
+    position: relative;
+}
+
+@keyframes slidein {
+    from{
+        position: relative;
+        right: 200px;
+    }
+    to{
+        position: relative;
+        right: 0px;
+    }
+/* averiguar x q no se anima el texto */
+
+}

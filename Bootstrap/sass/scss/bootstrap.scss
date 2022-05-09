@@ -1,0 +1,12 @@
+//  Importar los archivos base de Boostrap  
+@import "../bootstrap-4.6.0/scss/functions";
+@import "../bootstrap-4.6.0/scss/variables";
+
+// Personalizacion de variables
+$theme-colors: (
+  "success": rgb(17, 226, 233)
+);
+
+
+// Importaremos el resto de Boostrap para que se procese
+@import "../bootstrap-4.6.0/scss/bootstrap";

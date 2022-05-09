@@ -1,0 +1,14 @@
+use ("Chat")
+
+db.users.insertMany([
+{"username":"kinde0","email":"ppalmer0@tuttocitta.it","password":"rNN5Q70uwQfi","birthdate":"4/18/2021","lastlogin":"ftilliards0@sfgate.com","status":{ "online":"","available":""},"contacts":"svalasek0"},
+{"username":"pcolkett1","email":"amcallan1@princeton.edu","password":"TkvzhzJbrwW","birthdate":"7/5/2021","lastlogin":"ishallcross1@wix.com","status":{ "online":"","available":""},"contacts":"hvel1"},
+{"username":"awalding2","email":"lhayne2@dagondesign.com","password":"1xiDJFq90r","birthdate":"3/2/2021","lastlogin":"grobrow2@wufoo.com","status":{ "online":"","available":""},"contacts":"nganning2"},
+{"username":"tamey3","email":"aswetman3@newsvine.com","password":"tI7tluO29RC","birthdate":"10/17/2021","lastlogin":"bflacke3@topsy.com","status":{ "online":"","available":""},"contacts":"cbraker3"},
+{"username":"dsigars4","email":"epeyton4@xinhuanet.com","password":"fQD2A74LqtvA","birthdate":"9/4/2021","lastlogin":"acamilleri4@ucoz.ru","status":{ "online":"","available":""},"contacts":"glindsley4"},
+{"username":"wscraney5","email":"sroscher5@chronoengine.com","password":"xnIj5wrXWE","birthdate":"4/2/2021","lastlogin":"aabdie5@yale.edu","status":{ "online":"","available":""},"contacts":"tpenfold5"},
+{"username":"jwallice6","email":"jballach6@yolasite.com","password":"bc3BysWDU","birthdate":"12/4/2021","lastlogin":"slarroway6@apple.com","status":{ "online":"","available":""},"contacts":"rvitet6"},
+{"username":"vbuckle7","email":"sfrangione7@jimdo.com","password":"8cs63B43","birthdate":"6/16/2021","lastlogin":"fentwhistle7@angelfire.com","status":{ "online":"","available":""},"contacts":"lquiddington7"},
+{"username":"breiners8","email":"tdicty8@reddit.com","password":"7WoNYu3OS","birthdate":"10/16/2021","lastlogin":"mcregin8@microsoft.com","status":{ "online":"","available":""},"contacts":"ctancock8"},
+{"username":"breedyhough9","email":"ngiacobo9@canalblog.com","password":"kgw6t3xzMA","birthdate":"3/13/2021","lastlogin":"elazer9@posterous.com","status":{ "online":"","available":""},"contacts":"grobion9"}
+])

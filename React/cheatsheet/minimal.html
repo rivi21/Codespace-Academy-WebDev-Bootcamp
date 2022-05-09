@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Toda nuestra app estará dentro de este div -->
+    <div id="root"></div>
+
+    <!-- importamos react -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- importamos babel para procesar jsx -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">//el type es un requisito para que sepa babel que es un JSX y que tiene que procesarlo
+        const root = document.querySelector('#root');//Seleccionamos el contenedor
+        const title = <h1>Hola, futuro.</h1>; //ya no hace falta ni createElement ni escribir un string template, sino directa/ el elemento del Dom que queremos crear
+        ReactDOM.render(title, root); //ReactDOM para acceder al dom (componente, elemento del Dom )
+    </script>
+</body>
+
+</html>
+<!-- esta sería la forma mínima de usar la librería de react -->

@@ -1,0 +1,40 @@
+* {
+margin: 0px;
+box-sizing: border-box;
+}
+.E11{
+    font-size: 0px;  
+    background-color: #0558c5;
+}
+a{
+    font-size: 16px;
+    
+    color: #f3edee;
+    text-decoration: none; /* quita el subrayado tipico de los enlaces */
+    padding: 10px;    
+    display: block;
+    text-align: center;
+}
+
+a:last-child{
+    display: none;
+}
+
+a:hover{
+    background-color: #020244 ;
+}
+
+@media only screen and (min-width: 500px) {
+    a {
+        display: inline-block;
+        width: 25%;       
+    }
+}
+@media only screen and (min-width: 900px) {
+    a{
+        width: 20%;
+    }
+    a:last-child{
+        display: inline-block;
+    }
+}

@@ -1,0 +1,34 @@
+* {
+    font: 1em/1.3 Arial, Helvetica, sans-serif;
+}
+p {
+    color: #555; 
+}
+#primero p{ 
+    color: #336699; 
+}/* selector de especificidad (a,b,c) significado:
+    a= nº de id que entran en juego
+    b= nº de clases
+    c= nº de etiquetas
+    Cuantos mas hay, más información y más específico y 
+    al revés, cuanto menos info, mas ambiguo,Si dos
+    selectores entran en conflicto, gana siempre
+    el más específico */
+    /* NOTA VIP: Lo más simple es lo elegante. 
+    Hay que procurar escribir lo menos posible siempre
+    que solucione el problema  */
+a {
+    color: #CC3300;
+}/* repasado hasta el minuto 40 del video de clase */
+#primero em { 
+    background: #FFFFCC; 
+    padding: .1em; 
+}
+em.especial{
+    background: #FFCC99; 
+    border: 1px solid #FF9900; 
+    padding: .1em;
+}
+.normal span{
+     font-weight: bold; 
+}

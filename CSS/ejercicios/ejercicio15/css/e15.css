@@ -1,0 +1,190 @@
+.gridbox{
+    height: 60vh;
+    width: 60vh;
+    margin: auto;
+
+    display: grid;
+    gap: 10px;
+    grid-template-areas:    "1   2   3   4"
+                            "5   6   7   8"
+                            "9   10  11  12"
+                            "13  14  15  16"
+}
+
+.box1{
+    animation-name: opacity-fadein;
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;      
+}
+
+.box2{
+    animation-name: opacity-fadein;
+    animation-delay: 1s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;    
+}
+
+.box3{
+    animation-name: opacity-fadein;
+    animation-delay: 1.5s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;    
+}
+
+.box4{
+    animation-name: opacity-fadein;
+    animation-delay: 2s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;    
+}
+
+.box5{
+    animation-name: opacity-fadein;
+    animation-delay: 2.5s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;    
+}
+
+.box6{
+    animation-name: opacity-fadein;
+    animation-delay: 3s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;    
+}
+
+.box7{
+    animation-name: opacity-fadein;
+    animation-delay: 3.5s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;    
+}
+
+.box8{
+    animation-name: opacity-fadein;
+    animation-delay: 4s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;    
+}
+
+.box9{
+    animation-name: opacity-fadein;
+    animation-delay: 4.5s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;    
+}
+
+.box10{
+    animation-name: opacity-fadein;
+    animation-delay: 5s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;    
+}
+
+.box11{
+    animation-name: opacity-fadein;
+    animation-delay: 5.5s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;    
+}
+
+.box12{
+    animation-name: opacity-fadein;
+    animation-delay: 6s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;    
+}
+
+.box13{
+    animation-name: opacity-fadein;
+    animation-delay: 6.5s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;    
+}
+.box14{
+    animation-name: opacity-fadein;
+    animation-delay: 7s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;    
+}
+
+.box15{
+    animation-name: opacity-fadein;
+    animation-delay: 7.5s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;    
+}
+
+.box16{
+    animation-name: opacity-fadein;
+    animation-delay: 8s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;   
+}
+
+@keyframes opacity-fadein {
+    from{
+        background-color: rgba(56, 125, 255, 0);
+    }
+    to{
+        background-color: rgba(56, 125, 255, 1);
+    }
+}
+
+[class^=box] { 
+    background-color: #387dff;
+    transition: all 0.1s ease-in; 
+}
+
+/* [class^=box]:hover { 
+    transform: scale(1.2,1.2) */
+/* } */
+
+.box1:hover{
+    transform: scale(1.2,1.2)
+} 
+.box2:hover{
+    transform: scale(1.2,1.2)
+}
+.box3:hover{
+    transform: scale(1.2,1.2)
+}
+.box4:hover{
+    transform: scale(1.2,1.2)
+}
+.box5:hover{
+    transform: scale(1.2,1.2)
+}
+.box6:hover{
+    transform: scale(1.2,1.2)
+}
+.box7:hover{
+    transform: scale(1.2,1.2)
+}
+.box8:hover{
+    transform: scale(1.2,1.2)
+}
+.box9:hover{
+    transform: scale(1.2,1.2)
+}
+.box10:hover{
+    transform: scale(1.2,1.2)
+}
+.box11:hover{
+    transform: scale(1.2,1.2)
+}
+.box12:hover{
+    transform: scale(1.2,1.2)
+}
+.box13:hover{
+    transform: scale(1.2,1.2)
+}
+.box14:hover{
+    transform: scale(1.2,1.2)
+}.box15:hover{
+    transform: scale(1.2,1.2)
+}
+.box16:hover{
+    transform: scale(1.2,1.2)
+}
+

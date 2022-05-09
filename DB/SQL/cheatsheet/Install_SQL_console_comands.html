@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Comandos consola para instalar mysql</h2>
+    <ul>
+        <li>ps aux | grep mysql</li>
+        <li>sudo service mysql status</li>
+        <li>sudo apt update</li>
+        <li>sudo apt install lamp-server^</li>
+        <li>sudo service mysql status</li>
+        <li>sudo service mysql start </li> para iniciar
+        <li>sudo service mysql stop</li> para parar
+        <li>mysql --version</li> para comprobar la version
+        <li>sudo mysql_secure_installation</li> para instalar la contraseña
+    </ul>
+
+    <span>yes a todo menos a quitar text database</span>
+
+    <ul>
+        <li>sudo mysql -u root -p</li>
+        <li>ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY '1234';</li>
+        <li>SHOW VARIABLES LIKE 'validate_password%';</li>
+        <li>SET GLOBAL validate_password.length = 4;</li>
+        <li>SHOW VARIABLES LIKE 'validate_password%';</li>
+        <li>ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY '1234';</li>
+        <li>FLUSH PRIVILEGES;</li>
+        <li>exit</li>
+    </ul>
+    <ul>
+        <li>sudo mysql -u root -p</li>
+        <li>CREATE USER 'usuario'@'localhost' IDENTIFIED BY 'usuario';</li>
+        <li>GRANT ALL PRIVILEGES ON *.* TO 'usuario'@'localhost' WITH GRANT OPTION;</li>
+        <li>exit</li>
+    </ul>
+
+    <ul>
+        <li>sudo mysql -u usuario -p</li>
+        la primera contraseña es la de la maquina virtual
+        la segunda es usuario
+    </ul>
+</body>
+
+</html>

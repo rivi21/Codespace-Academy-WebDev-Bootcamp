@@ -1,0 +1,114 @@
+use ("Chat")
+
+db.invoices.insertMany([{
+
+  "_id": {
+    "$oid": "61dea845bca9170eed0881e6"
+  },
+  "invoice_date": "8/11/2021",
+  "id_product": {
+    "$oid": "61dea9cfbca9170eed0881fe"
+  },
+  "id_customer": {
+    "$oid": "61dea838fc13ae303a000b73"
+  }
+},{
+  "_id": {
+    "$oid": "61dea845bca9170eed0881e7"
+  },
+  "invoice_date": "2/14/2021",
+  "id_product": {
+    "$oid": "61dea9cfbca9170eed0881ff"
+  },
+  "id_customer": {
+    "$oid": "61dea838fc13ae303a000b74"
+  }
+},{
+  "_id": {
+    "$oid": "61dea845bca9170eed0881e8"
+  },
+  "invoice_date": "4/20/2021",
+  "id_product": {
+    "$oid": "61dea9cfbca9170eed088200"
+  },
+  "id_customer": {
+    "$oid": "61dea838fc13ae303a000b75"
+  }
+},{
+  "_id": {
+    "$oid": "61dea845bca9170eed0881e9"
+  },
+  "invoice_date": "12/7/2021",
+  "id_product": {
+    "$oid": "61dea71afc13ae303a000b51"
+  },
+  "id_customer": {
+    "$oid": "61dea71afc13ae303a000b52"
+  }
+},{
+  "_id": {
+    "$oid": "61dea845bca9170eed0881ea"
+  },
+  "invoice_date": "5/21/2021",
+  "id_product": {
+    "$oid": "61dea71afc13ae303a000b53"
+  },
+  "id_customer": {
+    "$oid": "61dea71afc13ae303a000b54"
+  }
+},{
+  "_id": {
+    "$oid": "61dea845bca9170eed0881eb"
+  },
+  "invoice_date": "8/18/2021",
+  "id_product": {
+    "$oid": "61dea71afc13ae303a000b55"
+  },
+  "id_customer": {
+    "$oid": "61dea71afc13ae303a000b56"
+  }
+},{
+  "_id": {
+    "$oid": "61dea845bca9170eed0881ec"
+  },
+  "invoice_date": "4/6/2021",
+  "id_product": {
+    "$oid": "61dea71afc13ae303a000b57"
+  },
+  "id_customer": {
+    "$oid": "61dea71afc13ae303a000b58"
+  }
+},{
+  "_id": {
+    "$oid": "61dea845bca9170eed0881ed"
+  },
+  "invoice_date": "3/28/2021",
+  "id_product": {
+    "$oid": "61dea71afc13ae303a000b59"
+  },
+  "id_customer": {
+    "$oid": "61dea71afc13ae303a000b5a"
+  }
+},{
+  "_id": {
+    "$oid": "61dea845bca9170eed0881ee"
+  },
+  "invoice_date": "9/11/2021",
+  "id_product": {
+    "$oid": "61dea71afc13ae303a000b5b"
+  },
+  "id_customer": {
+    "$oid": "61dea71afc13ae303a000b5c"
+  }
+},{
+  "_id": {
+    "$oid": "61dea845bca9170eed0881ef"
+  },
+  "invoice_date": "4/13/2021",
+  "id_product": {
+    "$oid": "61dea71afc13ae303a000b5d"
+  },
+  "id_customer": {
+    "$oid": "61dea71afc13ae303a000b5e"
+  }
+}])

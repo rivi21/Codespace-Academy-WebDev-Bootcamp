@@ -1,0 +1,16 @@
+.flex-parent{
+    width: 30%;  
+    padding: 1%;
+    background-color: #e7e6e6;
+    border: solid #b3aeae;
+    
+    display: flex;
+    justify-content: space-between;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+}

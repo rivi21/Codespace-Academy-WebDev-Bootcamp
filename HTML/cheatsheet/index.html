@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- conjunto de caracteres utf8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- compatibilidad con iexplorer/edge y mas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- caracs del visor -->
+
+    <meta name="description" content="tienda online venta de gafas">
+    <meta name="author" content="Codespace academy">
+    <meta name="keywords" content="sunglasses tienda ecommerce sun glasses">
+
+    <!-- controlar la indexacion de mi pagina -->
+    <meta name="robots" content="index"> <!-- config por defecto -->
+    <meta name="robots" content="noindex">
+
+    <!-- Controlar si los motores siguen y procesan los enlaces de mi página -->
+    <meta name="robots" content="follow"> <!-- config por defecto -->
+    <meta name="robots" content="nofollow">
+
+    <!-- Controlar la caché de mi página -->
+    <meta http-equiv="cache control" content="no-cache">
+
+    <!-- redirección a otra página -->
+    <meta http-equiv="refresh" content="" ; url="http://google.com"> <!-- que a los dos segs me redirija a google -->
+
+    <!-- CSS directamente en el HTML, no recomendado!! -->
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+
+    <!-- CSS importado desde otro archivo, recomendado -->
+    <link rel="stytlesheet" href="style.css">
+
+    <title>Index</title>
+</head>
+
+<body>
+    <!-- Enlaces externos e internos -->
+
+    <a href="https://codespaceacademy.com"target="_blank">Ir a Code</a><!-- target="_blank" sirve para abrir el enlace en una nueva pestaña-->
+    <a href="blog.html" >Blog</a>
+
+    <!-- Espacio en blanco -->
+    <br>
+
+    <!-- Linea separadora  -->
+    <hr>
+
+    <!-- Titulos -->
+    <h1>Titulo 1</h1>
+    <h2>Titulo 2</h2>
+    <h3>Titulo 3</h3>
+    <h4>Titulo 4</h4>
+    <h5>Titulo 5</h5>
+    <h6>Titulo 6</h6>
+
+    <br>
+    <hr><br>
+
+    <!-- Parrafos / Paragraph -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, perferendis?
+    </p>
+
+    <!-- texto con preformato <pre> es el único elemento que respeta los espacios en blanco. 
+        En el resto, HTML no los respeta más allá de uno-->
+    <pre>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Error, ullam accusantium            quidem magnam   veniam consequuntur 
+        vitae earum voluptas minima             reprehenderit?
+    </pre>
+
+    <p>Lorem ipsum dolor sit amet <span class="ingredients">,adipisicing</span> elit. 
+       ratione deserunt blanditiis laudantium quis possimus harum enim nostrum?</p> 
+        
+
+    <!-- contenedores / containers -->
+
+    <header>
+        <nav>
+            <header>
+                <a href="">Enlace 1</a>
+                <a href="">Enlace 2</a>
+                <a href="">Enlace 3</a>
+            </header>
+        </nav>
+    </header>
+    <article>
+        <h1>Título de Artículo</h1>
+        <p>Contenido del Artículo</p>
+    </article>
+
+    <aside>
+        <p>menu lateral, con menos relevancia (para los buscadores)</p>
+    </aside>
+    <footer>
+        <p>pie de pagina</p>
+        <a href="">legal</a>
+    </footer>
+
+    <!-- contenedor sin significADO SEMANTICO PERO MUY UTIL para agrupar -->
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        <span>calle Larios 3</span>
+    </div>
+    <br>
+    <hr><br>
+
+    <!-- listas -->
+
+    <h4>Listas</h4>
+
+    <ol><!-- ordenada -->
+        <li>elemento1</li>
+        <li>elemento2</li>
+
+    </ol>
+
+    <!-- comando de emmet ul>li*3 -->
+    <ul><!-- desordenada -->
+        <li>e1</li>
+        <li>e2</li>
+        <li>e3</li>
+    </ul>
+
+    <ol start="200"><!-- empieza la lista numerando desde 200 -->
+        <li>e1</li>
+        <li>e2</li>
+        <li>e3</li>
+    </ol>
+    <ol>
+        <!-- relacionar un valor constante con algo que elija el usuario -->
+        <li data value="1">HTML</li>
+
+    </ol>
+
+    <br>
+    <hr><br>
+
+    <!--  tablas / tables -->
+    <h4>Tablas</h4>
+
+    <table>
+        <caption>Información de usuarios</caption><!-- para darle un título a la tabla -->
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Luis</td>
+                <td>luis@gmail.com</td>
+                <td>45
+                <td>
+            </tr>
+            <tr>
+                <td>Jhon</td>
+                <td>jhon@gmail.com</td>
+                <td>30
+                <td>
+            </tr>
+            <tr>
+                <td>Jaime</td>
+                <td>jaime@gmail.com</td>
+                <td>28
+                <td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Edad</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+    <hr><br>
+
+    <!-- formularios / Forms-->
+    <h4>formularios / Forms</h4>
+
+    <form action="procesar-datos.php"><!-- action es para definir el comportamiento del formulario cuando lo enviemos. Se usaba antes, 
+                                            nosotros no. Aquí nos envía a "procesar-datos.php" que como es ficticio
+                                            nos dará error 404-->
+        <div>
+            <label for="nameInput">Nombre:</label><br><!-- label e input suelen ir de la mano. 
+                                                            Para enlazarse usamos el atributo for en label que ha de hacer match 
+                                                            con el id de un input. Por eso se llaman igual, Aquí "nameInput" -->
+            <input type="text" id="nameInput" name="userName" required placeholder="pon tu nombre">
+        </div><br>
+        <div>
+            <label for="emailInput">Email:</label><br>
+            <input type="email" id="emailInput" name="email">
+        </div><br>
+        <div>
+            <label for="passwordInput">Contraseña:</label><br>
+            <input type="password" id="passwordInput" name="password">
+        </div><br>
+        <div>
+            <label for="descriptionInput">Descripción:</label><br>
+            <textarea id="description input" name="description" cols="35" rows="10"> </textarea>
+        </div><br>
+        <div>
+            <label for="genderInput">Género:</label><br>
+            <select name="gender" id="genderInput">
+                <option value="female">femenino</option>
+                <option value="male">masculino</option>
+                <option value="other">otro</option>
+            </select>
+        </div><br>
+        <div>
+            <label for="ageInput">Edad:</label><br>
+            <input type="number" id="ageInput" name="age" min="21" step="0.1">
+        </div><br>
+        <div>
+            <label for="birthdateInput">fecha de nacimiento</label><br>
+            <input type="date" name="birthdate" id="birthdateInput">
+
+        </div>
+        <div>
+            <label for="carBrandInput">Marca de coche:</label><br>
+            <input type="text" list="carBrandInput" name="carBrand">
+            <datalist id="carBrandInput">
+                <option value="bmw">BMW</option>
+                <option value="ford">Ford</option>
+                <option value="mercedes">Mercedes Benz</option>
+            </datalist>
+        </div><br>
+        <div>
+            <div>
+                <input type="radio" id="partner" name="relationship" value="partner">
+                <label for="partner">Pareja de hecho</label>
+            </div>
+            <div>
+                <input type="radio" id="married" name="relationship" value="married" disabled>
+                <label for="married">Casado</label>
+            </div>
+            <div>
+                <input type="radio" id="divorced" name="relationship" value="divorced" checked>
+                <label for="partner">Divorciado</label>
+            </div>
+
+        </div>
+        <div>
+            <div>
+                <input type="checkbox" id="iphoneProduct" name="iphone">
+                <label for="iphoneProduct">Iphone</label>
+            </div>
+            <div>
+                <input type="checkbox" id="macbookProduct" name="macbook" disabled>
+                <label for="macbookProduct">Macbook</label>
+            </div>
+            <div>
+                <input type="checkbox" id="airpodsProduct" name="airpods" checked required>
+                <label for="airpodsProduct">Airpods</label>
+            </div><br>
+
+        </div>
+        <div>
+            <label for="rangeInput">Selecciona cantidad de alimentos</label><br>
+            <input type="range" name="range" id="rangeInput"><br>
+        </div><br>
+        <div>
+            <label for="fileInput">Subir un archivo</label>
+            <input type="file" id="fileInput" name="file">
+        </div><br>
+
+
+
+        <input type="submit" value="Guardar"> <!-- El tipo submit sirve para enviar el formulario. Al pulsarlo nos envía
+                                                    al "action" de form. -->
+        <input type="reset" value="Vaciar formulario">
+    </form>
+
+
+    <br><br><br><br><br><br><br><br>
+
+    <!-- Multimedia / media -->
+    <h3>Multimedia / media</h3>
+
+    <img src="../CSS/images/sample.jpg" alt="Pajaro en rama">
+
+    <img width="400"
+        src="https://images.pexels.com/photos/5829180/pexels-photo-5829180.jpeg?cs=srgb&dl=pexels-ishara-kasthuriarachchi-5829180.jpg&fm=jpg"><br>
+
+    <iframe src="https://www.youtube.com/embed/OgIRAjnnJzI" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe><br>
+
+    <iframe width="500" height="500"
+        src="https://www.uv.mx/personal/clelanda/files/2013/03/Aprender-a-buscar-en-Google.pdf"></iframe><br>
+
+    <br>
+
+    <h3>Scripting</h3>
+
+    <script>
+        document.write("Escribiendo esto desde JS")
+    </script>
+
+    <noscript>
+        Error. Tu navegador no soporta JavaScript.
+    </noscript>
+
+
+</body>
+
+</html>

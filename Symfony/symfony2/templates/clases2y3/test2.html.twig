@@ -1,0 +1,9 @@
+{% extends 'clases2y3/base_backend.html.twig' %}
+{# Ahora base_backend es la plantilla padre de test2 #}
+{% block title %}Titulo personalizado{% endblock %}
+
+{% block body %}
+  {% include 'clases2y3/cabecera.html.twig' %}{# esto es como un import de otro twig #}
+  <p>contenido test2</p>
+{% endblock %}
+

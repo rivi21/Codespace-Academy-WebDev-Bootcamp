@@ -1,0 +1,9 @@
+use ("Chat")
+
+db.chats.insertMany([
+ {"members":[], "messages":{"from":"","body":"","createAt":""},
+ {"members":[], "messages":{"from":"","body":"","createAt":""},
+ {"members":[], "messages":{"from":"","body":"","createAt":""},
+ {"members":[], "messages":{"from":"","body":"","createAt":""},
+ {"members":[], "messages":{"from":"","body":"","createAt":""}
+ ])

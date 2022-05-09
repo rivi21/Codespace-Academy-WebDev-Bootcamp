@@ -1,0 +1,31 @@
+https://github.com/wakaries/codespace (repo del ejercicio)
+
+DefaultController
+- /blog (listado de las últimas 3 entradas)
+- /blog/{slug}
+- /admin/login
+
+CategoriaController
+- /admin/categoria
+- /admin/categoria/add
+- /admin/categoria/edit/{id}
+- /admin/categoria/delete/{id}
+
+EtiquetaController
+- /admin/etiqueta
+- /admin/etiqueta/add
+- /admin/etiqueta/edit/{id}
+- /admin/etiqueta/delete/{id}
+
+EntradaController
+- /admin/entrada
+- /admin/entrada/add
+- /admin/entrada/edit/{id}
+- /admin/entrada/delete/{id}
+
+ApiController
+- /api/entrada [GET] - Listado de todas las entradas
+- /api/entrada [POST] - Añadir una entrada
+- /api/entrada/{id} [GET] - Mostrar una entrada
+- /api/entrada/{id} [PUT] - Modifica la entrada
+- /api/entrada/{id} [DELETE] - Elimina una entrada

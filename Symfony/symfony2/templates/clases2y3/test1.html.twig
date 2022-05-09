@@ -1,0 +1,65 @@
+{% extends 'clases2y3/base_backend.html.twig' %}
+
+  {% block body %}{# La sentencia llave-porcentaje es para cualquier otra operación que no sea pintar en pantalla #}
+   {% include 'clases2y3/cabecera.html.twig' %}
+
+   {% set var1 ='asdf'%} {# set sirve para asignar valores a una variable. #} 
+   {# estos comentarios a diferencia de los de html no se ven en el inspector porque no se mandan al cliente #}
+ 
+   {# La sentencia de tipo doble llave es para pintar lo que queramos dentro de la plantilla #}
+   <h1>Hello, {{ param1 }} {{var1}} {{6 + 4}}</h1>
+   {# Para pintar el valor 1 del array #}
+   <h2>{{array.valor1.key}}</h2>
+   {# Para pintar el valor1 de dentro del json  #}
+   <h2>{{ json.array.valor1.key }}</h2>
+   {#  #}
+   <h2>{{ json2.array.valor1.key }}</h2>
+   {# aquí pintamos el array #}
+   <ul> 
+      {# Lo de antes de la coma es la clave del array. Lo de después es el valor que en este caso es otro array  #}   
+      {% for key,value in array %}
+        <li>{{key}}</li>
+        {% for value2 in value %}
+        <li>{{value2}}</li>
+        {# Las sentenciaas acaban con un "end" lo que sea endfor, endif,... #}
+        {% endfor %}
+      {% endfor %}
+   </ul>
+   {# Ahora pintamos el $array2 #}
+   <ul>
+     {% for key1,value1 in array2 %}
+     <li>
+         {{ key1 }}
+         <ul>
+           {% for key2,value2 in value1 %}
+             <li>{{ key2 }}: {{ value2 }}</li>
+           {% endfor %}  
+         </ul>
+     </li>
+     {% endfor %}
+   </ul>
+   {# para renderizar del 1 al 10 #}
+      {% for i in 1..10 %} {# 1..10 es un array definido aquí mismo #}
+        {{i}},
+      {% endfor %}
+   <br>
+     {# para renderizar solo los impares usamos la función odd #}
+      {% for i in 1..10 %}
+        {% if i is odd %} 
+          {{ i }},
+        {% endif %}
+      {% endfor %}
+   <br>
+   {# para imprimir objetos como fecha hay que usar filtros 
+   para hacer conversiones a una cadena de texto#}
+   <h4>{{ fecha | date('d/m/Y') }}</h4>
+   <h4>{{ fecha | date('H:i:s') }}</h4>
+   <h4>{{ fecha2 | date('d/m/Y') }}</h4>
+   <p>{{'esto es una cadena con filtro para mayusculas' | upper}}
+   {# para renderizar html hay que usar el filtro raw. Esto lo hace Symfony por seguridad
+   para evitar que nadie pueda meter código. Si no ponemos el raw no renderiza la cadena
+   Al poner raw es como decirle que me fio xq la cadena la he escrito yo #}
+   <p>{{ html | raw }}</p>
+ 
+  {% endblock %}
+
